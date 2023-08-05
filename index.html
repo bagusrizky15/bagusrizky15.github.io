@@ -8,9 +8,10 @@
   <title>Bagus R</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body class="preload">
   <nav id="desktop-nav">
     <div class="logo">M Bagus Rizky</div>
     <div>
@@ -48,7 +49,8 @@
       <h1 class="title">Bagus Rizky</h1>
       <p class="section__text__p2">Mobile Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('https://drive.google.com/file/d/1k8yrsZC7tdqn-HA5eRS8ZqDFJXxuu05K/view?usp=sharing')">
+        <button class="btn btn-color-2"
+          onclick="window.open('https://drive.google.com/file/d/1k8yrsZC7tdqn-HA5eRS8ZqDFJXxuu05K/view?usp=sharing')">
           Download CV
         </button>
         <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -243,7 +245,25 @@
     </nav>
     <p>Copyright &#169; 2023 Bagus Rizky. All Rights Reserved.</p>
   </footer>
+
+   <!-- Loading square for squar.red network -->
+   <div class="loader-wrapper">
+    <span class="loader">
+      <span class="loader-inner">
+
+      </span>
+    </span>
+  </div>
+  
+  <!-- <script src="script.js">
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+      $("body").removeClass("preload");
+    });
+  </script> -->
+
   <script src="script.js"></script>
+
 </body>
 
 </html>
