@@ -59,9 +59,9 @@
       </div>
       <div id="socials-container">
         <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/mohamad-bagus-rizky-bba81a210/'" />
+          onclick="window.open('https://www.linkedin.com/in/mohamad-bagus-rizky-bba81a210/')" />
         <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/bagusrizky15'" />
+          onclick="window.open('https://github.com/bagusrizky15')" />
       </div>
     </div>
   </section>
@@ -178,10 +178,10 @@
           </div>
           <h2 class="experience-sub-title project-title">Project One</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
               Live Demo
             </button>
           </div>
@@ -192,10 +192,10 @@
           </div>
           <h2 class="experience-sub-title project-title">Project Two</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
               Live Demo
             </button>
           </div>
@@ -206,10 +206,10 @@
           </div>
           <h2 class="experience-sub-title project-title">Project Three</h2>
           <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('#')">
               Github
             </button>
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">
               Live Demo
             </button>
           </div>
@@ -226,11 +226,22 @@
         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
         <p><a href="mailto:mbagusrizky15@gmail.com">mbagusrizky15@gmail.com</a></p>
       </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com/in/mohamad-bagus-rizky-bba81a210/">LinkedIn</a></p>
-      </div>
     </div>
+    <canvas id="canvas" width="100" height="100"></canvas>
+    <script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+    <script>
+      const r = new rive.Rive({
+        src: "./assets/hippo.riv",
+        // Or the path to a public Rive asset
+        // src: '/public/example.riv',
+        canvas: document.getElementById("canvas"),
+        autoplay: true,
+        stateMachines: "State Machine 1",
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
+      });
+    </script>
   </section>
   <footer>
     <nav>
@@ -246,22 +257,14 @@
     <p>Copyright &#169; 2023 Bagus Rizky. All Rights Reserved.</p>
   </footer>
 
-   <!-- Loading square for squar.red network -->
-   <div class="loader-wrapper">
+  <!-- Loading square for squar.red network -->
+  <div class="loader-wrapper">
     <span class="loader">
       <span class="loader-inner">
 
       </span>
     </span>
   </div>
-  
-  <!-- <script src="script.js">
-    $(window).on("load", function () {
-      $(".loader-wrapper").fadeOut("slow");
-      $("body").removeClass("preload");
-    });
-  </script> -->
-
   <script src="script.js"></script>
 
 </body>
