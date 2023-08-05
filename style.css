@@ -169,6 +169,15 @@ section {
   height: 80vh;
 }
 
+.section__pic-container img {
+  border-radius: 50%;
+  /* Additional styling (optional) */
+  width: 400px; /* Adjust the width and height as needed */
+  height: 400px;
+}
+
+
+
 .section__pic-container {
   display: flex;
   height: 400px;
