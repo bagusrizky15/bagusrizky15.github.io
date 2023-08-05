@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  $(".loader-wrapper").fadeOut("slow");
+  const fadeOutDuration = 3000; // 5 seconds in milliseconds
+  $(".loader-wrapper").fadeOut(fadeOutDuration);
   $("body").removeClass("preload");
 });
 
