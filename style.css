@@ -268,7 +268,6 @@ section {
 }
 
 
-
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -457,6 +456,13 @@ article .icon {
 
 #projects {
   position: relative;
+}
+
+.desc-project {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 14px;
 }
 
 .color-container {
