@@ -259,6 +259,8 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 .section__pic-container img {
